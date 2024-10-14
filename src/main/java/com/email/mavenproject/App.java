@@ -35,7 +35,8 @@ public class App
 		};
 			
         Session session = Session.getInstance(props, auth);
-        
+
+	// Calling method sendEmail from SendEmail class
         SendEMail.sendEmail(session, toEmailID, "Subject", "Email Text");
      
 		
